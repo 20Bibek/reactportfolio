@@ -1,0 +1,152 @@
+.collaborate{
+    background: url("src/assets/profile2.jpg");
+    width: 100%;
+    height: 92.5vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    /* gap: 130px; */
+    /* align-items: center; */
+
+}
+.leftside{
+    width: 30%;
+    height:30% ;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    /* align-items: center; */
+    gap: 20px;
+    color: #fff;
+    font-size: larger;
+    border-bottom: 5px solid white;
+}
+.rightside{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aqua; */
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin: auto;
+}
+.rightside>form{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+    align-items: center;
+}
+.rightside>form>input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.rightside>form>#idea{
+    height: 80px;
+    padding: 0px 10px 30px 10px;
+}
+.rightside>form>button{
+    width: 30%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgreen;
+    font-weight: 500;
+}
+
+@media (max-width: 390px) {
+    .collaborate {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px; /* Increase spacing for clarity */
+        text-align: center;
+        width: 100%;
+        height: 608px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .leftside {
+        width: 100%; /* Full width for better readability */
+        padding: 10px;
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .leftside h1 {
+        font-size: 24px; /* Larger heading for emphasis */
+    }
+
+    .leftside p {
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    .rightside {
+        width: 100%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.347);
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+
+    .rightside > form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px; 
+        align-items: center;
+
+    }
+
+    .rightside > form > input, 
+    .rightside > form > #idea {
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        background-color: rgba(237, 234, 234, 0.593);
+
+    }
+
+    .rightside > form > #idea {
+        height: 80px;
+        resize: none;
+    }
+
+    .rightside > form > button {
+        width: 40%;
+        height: 38px;
+        background-color: #89abb9; 
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease; 
+    }
+
+    .rightside > form > button:hover {
+        background-color: #7e75a6;
+    }
+}

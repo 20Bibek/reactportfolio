@@ -1,0 +1,352 @@
+.home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 30px;
+}
+
+.lefthome {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #e68831;
+}
+
+.lefthome>.lefthome-card {
+    width: 80%;
+    height: 250px;
+    margin-top: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.877);
+    padding: 18px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    line-height: 30px;
+    box-shadow: 10px 10px 1px 1px rgb(103, 19, 6);
+    background-color: #eba9a2;
+}
+
+.lefthome>.lefthome-card>h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #6b0d02;
+    
+}
+
+.lefthome>.lefthome-card>p {
+    font-weight: 400;
+    color: #871d00;
+}
+
+.righthome {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.leftone {
+    width: 40%;
+    height: 80%;
+    margin-top: 50px;
+    background: url("src/assets/image-from-rawpixel-id-15312536-png.png");
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+.rightone {
+    width: 40%;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    width: 100%;
+    height: 48%;
+    /* border: 2px solid rgb(218, 193, 146); */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 19px;
+    border-bottom: 5px solid #eba9a2;
+    box-shadow: 0px 10px 1px #6b0d02;
+
+
+}
+
+.btn-container {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-container>button {
+    flex: 1 1 calc(33.33% - 10px);
+    padding: 8px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 0.3px solid gray;
+    border-radius: 120px;
+    color: #871d00;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease;
+    transform: 0.3s ease;
+
+}
+
+.btn-container button:hover {
+    box-shadow: 0px 6px 1px #eba9a2;
+
+    /* background-color: #1f0f70; */
+    transform: translateY(-2px);
+}
+
+#motiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#motiv p {
+    line-height: 2.8;
+    position: relative;
+    right: 0;
+    text-align: right;
+    font-size: 18px;
+    color: #871d00;
+}
+
+#motiv span {
+    display: inline-block;
+    border-radius: 100px;
+    margin: 0 15px;
+    margin-bottom: -12.5px;
+}
+
+#onespan {
+    width: 80px;
+    height: 40px;
+    background-image: url('https://images.unsplash.com/photo-1498766707495-856f300a5821?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: 0% 10%;
+    transition: all 0.3s ease-in-out;
+}
+
+#onespan:hover {
+    width: 100px;
+    height: 60px;
+
+}
+
+#twospan {
+    width: 100px;
+    height: 40px;
+    background-image: url('https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: 0% 20%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#twospan:hover {
+    width: 100px;
+    height: 60px;
+
+}
+
+#threespan {
+    width: 90px;
+    height: 40px;
+    background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: 10% 50%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#threespan:hover {
+    width: 110px;
+    height: 60px;
+
+}
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    70% {
+      width: 70%;
+    }
+    
+  }
+  
+  @keyframes blink {
+    0% {
+      border-color: transparent;
+    }
+    70% {
+      border-color: #e68831;
+    }
+  }
+  
+  .animatedlogo {
+    font-size: 40px;
+    height: auto;
+    width: auto;
+    font-weight: bold;
+    color: #e68831;
+    white-space: nowrap;
+    overflow:hidden;
+    display: inline-block;
+    border-right: 2px solid #e68831;
+    animation: typing 5s steps(30, end) infinite, blink 0.75s step-end infinite;
+  }
+  
+  @media (max-width: 1200px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .lefthome,
+    .righthome {
+        width: 90%;
+        border: none;
+        
+    }
+
+    .lefthome {
+        margin-bottom: 20px;
+    }
+
+    .lefthome>.lefthome-card {
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+        z-index: -1;
+        
+    }
+
+    .righthome {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .leftone,
+    .rightone {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    #motiv p {
+        font-size: 16px;
+    }
+
+    .btn-container button {
+        flex: 1 1 45%;
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lefthome-card>h1 {
+        font-size: 32px;
+    }
+
+    .lefthome-card>p {
+        font-size: 14px;
+    }
+
+    .btn-container button {
+        flex: 1 1 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #motiv p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .home {
+        margin-top: 10px;
+    }
+    .righthome>.leftone{
+        width: 70%;
+        height: 400px;
+    }
+
+    .lefthome>.lefthome-card {
+        padding: 15px;
+        width: 80%;
+        height: 200px;
+        line-height: normal;
+        /* border: none; */
+    }
+
+    .lefthome>.lefthome-card>h1 {
+        font-size: 24px;
+    }
+
+    .lefthome>.lefthome-card>p {
+        font-size: 12px;
+    }
+
+    #motiv p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .btn-container button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .leftone {
+        background-size: cover;
+        height: 200px;
+    }
+
+    #onespan,
+    #twospan,
+    #threespan {
+        width: 60px;
+        height: 30px;
+    }
+
+    #onespan:hover,
+    #twospan:hover,
+    #threespan:hover {
+        width: 70px;
+        height: 40px;
+    }
+}

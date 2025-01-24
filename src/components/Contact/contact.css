@@ -1,0 +1,114 @@
+.contact{
+    width: 100%;
+    height: 50vh;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    background-position: center;
+
+}
+
+.topfoot{
+    width: 100%;
+    height: 75%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+.topleft{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8379de;
+}
+.topmid{
+    width: 60%;
+    height: 10%;
+
+}
+.topmid>ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+.topmid>ul>li>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+      font-weight: 500;
+}
+.topmid >ul>li>a:hover{
+    color: #6e94ad;
+}
+.topright{
+    width: 20%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottomfoot{
+    width: 100%;
+    height: 15%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 390px) {
+    .contact {
+      height: auto; /* Adjust height for mobile */
+      background-size: cover; /* Ensure the background covers the entire section */
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .topfoot {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto;
+      display: flex;
+      gap: 20px;
+    }
+    .topleft {
+      height: auto; /* Adjust height dynamically */
+      text-align: center; /* Center-align the text */
+      color:  #e68831;
+    }
+    .topmid {
+      width: 100%; /* Full width for mobile */
+      height: auto;
+    }
+    .topmid > ul {
+      flex-direction: column; /* Stack menu items vertically */
+      gap: 10px; /* Add spacing between items */
+      color: rgb(0, 0, 0);
+      font-weight: 500;
+    }
+    .topmid >ul>li:hover{
+        color: #6e94ad;
+    }
+    .topright {
+      width: 100%; /* Full width for mobile */
+      height: auto;
+      justify-content: center; /* Center-align social icons */
+      gap: 10px; /* Add spacing between icons */
+    }
+    .bottomfoot {
+      flex-direction: column; /* Stack text vertically */
+      text-align: center; /* Center-align text */
+      gap: 5px; /* Add spacing between lines */
+      font-size: 12px;
+    }
+  }
+  
