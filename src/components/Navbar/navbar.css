@@ -95,7 +95,7 @@
   
   
   /* Media Queries for Mobile */
-  @media (max-width: 390px){
+  @media (max-width: 480px){
     .navbar{
         width: 100%;
         height: 60px;
