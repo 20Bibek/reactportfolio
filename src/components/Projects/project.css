@@ -107,17 +107,17 @@
     
 }
 #puma{
-  background: url("src/assets/Screenshot 2025-01-22 113142.png");
+  background: url("https://images.unsplash.com/photo-1632993818733-b2b1931b2d4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
 }
 #calculator{
-  background: url("src/assets/Screenshot 2025-01-22 113334.png");
+  background: url("https://images.unsplash.com/photo-1612622826776-cd8b6da23632?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
 }
 #weather{
-  background: url("src/assets/Screenshot 2024-12-25 213525.png");
+  background: url("https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
 }
