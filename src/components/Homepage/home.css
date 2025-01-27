@@ -253,8 +253,9 @@
         align-items: center;
         gap: 20px;
     }
-
-    .leftone,
+    .leftone{
+        display: none;
+    }
     .rightone {
         width: 90%;
         height: auto;
@@ -263,6 +264,12 @@
 
     .card {
         height: auto;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: none;
     }
 
     #motiv p {

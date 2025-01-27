@@ -151,6 +151,10 @@
     border-right: 2px solid rgb(115, 157, 173);
 
 }
+.para{
+  font-weight: 600;
+  color: darkgray;
+}
 .skills li{
     background: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     flex: 1 1 calc(33.33% - 10px);
@@ -283,3 +287,100 @@
       border-bottom: none;
     }
   }
+
+  /* Tablet Styles (600px - 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .about {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .leftabout {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    padding: 40px 20px;
+  }
+
+  .leftbox {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .leftbox > h1 {
+    font-size: 30px;
+  }
+
+  .leftbox > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .rightabout {
+    width: 100%;
+    padding: 20px;
+    gap: 60px;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .technical,
+  .soft {
+    width: 100%;
+    height: auto;
+    border: none;
+    text-align: center;
+  }
+
+  .technical > h2,
+  .soft > h2 {
+    font-size: 26px;
+    text-decoration: underline;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .skills li {
+    width: calc(33.33% - 10px); /* Ensures three items per row */
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .internships {
+    width: 100%;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .internships > h1 {
+    font-size: 26px;
+  }
+
+  .internships h2 {
+    font-size: 22px;
+  }
+
+  .int1, .int2, .int3 {
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid rgb(115, 157, 173);
+  }
+
+  .int1:last-child,
+  .int2:last-child,
+  .int3:last-child {
+    border-bottom: none;
+  }
+}
