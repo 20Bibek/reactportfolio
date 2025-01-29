@@ -43,7 +43,7 @@ const Project = () => {
           </div>
           <div className="pbottom" id="puma"></div>
         </div>
-        <div className="pcard" id="box-card">
+        {/* <div className="pcard" id="box-card">
           <div className="imgbox">
             <button>Enhance</button>
           </div>
@@ -56,7 +56,7 @@ const Project = () => {
           <div className="imgbox">
             <button>Design</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
