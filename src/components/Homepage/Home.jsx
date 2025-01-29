@@ -9,7 +9,7 @@ const Home = () => {
       <div className="lefthome">
         <div className="lefthome-card">
             <h1 className="animatedlogo">BIBEK DASH</h1>
-            <p>I'm a full-stack designer on a mission to empower people through captivating digital experiences and side-project tools. With a passion for storytelling through comics and illustrations, I bring creativity and innovation to every project.</p>
+            <p>MERN STACK DEVELOPER</p>
         </div>
       </div>
       <div className="righthome">

@@ -10,14 +10,15 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    border-right: 2px solid #e68831;
+    border-right: 2px solid rgb(115, 157, 173);
+
 }
 
 .lefthome>.lefthome-card {
     width: 80%;
     height: 250px;
     margin-top: 50px;
-    border: 3px solid rgba(255, 255, 255, 0.877);
+    border: 0.3px solid rgba(25, 11, 126, 0.877);
     padding: 18px;
     border-radius: 20px;
     display: flex;
@@ -25,20 +26,21 @@
     justify-content: center;
     gap: 10px;
     line-height: 30px;
-    box-shadow: 10px 10px 1px 1px rgb(103, 19, 6);
-    background-color: #eba9a2;
+    box-shadow: 10px 10px 1px 1px rgb(115, 157, 173);
+    background-color: #b1c9d7;
 }
 
 .lefthome>.lefthome-card>h1 {
     font-size: 40px;
     font-weight: 800;
-    color: #6b0d02;
+    color: #3f41a2;
+
     
 }
 
 .lefthome>.lefthome-card>p {
     font-weight: 400;
-    color: #871d00;
+    /* color: #871d00; */
 }
 
 .righthome {
@@ -105,7 +107,6 @@
     border: none;
     border-bottom: 0.3px solid gray;
     border-radius: 120px;
-    color: #871d00;
     font-weight: 600;
     transition: box-shadow 0.3s ease;
     transform: 0.3s ease;
@@ -113,7 +114,7 @@
 }
 
 .btn-container button:hover {
-    box-shadow: 0px 6px 1px #eba9a2;
+    box-shadow: 0px 6px 1px #b1c9d7;
 
     /* background-color: #1f0f70; */
     transform: translateY(-2px);
@@ -133,7 +134,7 @@
     right: 0;
     text-align: right;
     font-size: 18px;
-    color: #871d00;
+    /* color: #871d00; */
 }
 
 #motiv span {
@@ -204,7 +205,7 @@
       border-color: transparent;
     }
     70% {
-      border-color: #e68831;
+      border-color: rgba(25, 11, 126, 0.877);
     }
   }
   
@@ -213,11 +214,11 @@
     height: auto;
     width: auto;
     font-weight: bold;
-    color: #e68831;
+    color: rgba(25, 11, 126, 0.877);
     white-space: nowrap;
     overflow:hidden;
     display: inline-block;
-    border-right: 2px solid #e68831;
+    border-right: 2px solid rgba(25, 11, 126, 0.877);
     animation: typing 5s steps(30, end) infinite, blink 0.75s step-end infinite;
   }
   

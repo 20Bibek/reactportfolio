@@ -11,26 +11,28 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    border-right: 2px solid rgb(0, 130, 11);
+    border-right: 2px solid rgb(115, 157, 173);
+
 
 }
 .left-box{
     width: 80%;
     height: 250px;
-    border: 1.5px solid rgba(0, 0, 0, 0.877);
-    background-color: rgb(206, 246, 176);
+    border: 0.3px solid rgba(25, 11, 126, 0.877);
     padding: 10px;
     border-radius: 20px;
     line-height: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 10px 10px 1px 1px rgb(0, 130, 11);
+    box-shadow: 10px 10px 1px 1px rgb(115, 157, 173);
+    background-color: #b1c9d7;
 
 }
 .left-box>h1{
     font-size: 35px;
-    color: #0b6301;
+    color: #3f41a2;
+
 }
 .left-box>p{
     /* font-size: 18px; */
@@ -339,7 +341,7 @@ a>button:hover{
       padding: 25px;
       line-height: 28px;
       margin-bottom: 20px;
-      background-color: rgb(206, 246, 176);
+      /* background-color: rgb(206, 246, 176); */
       /* box-shadow: 5px 5px 15px rgba(0, 130, 11, 0.3); */
     }
   

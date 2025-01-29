@@ -8,7 +8,7 @@ const About = () => {
         <div className="leftbox">
         <h1>About</h1>
         <p>
-        Every day sketches, brainfarts and ideas flying around in my backpack. I hope they can inspire or help someone out there.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim at illo eos voluptatibus repudiandae quam maxime a illum ratione.
         </p>
         </div>
       </div>
@@ -17,13 +17,13 @@ const About = () => {
             <div className="technical">
                 <h2>Technical Skills</h2>
                 <ul>
-                    <li>React js.</li>
-                    <li>Node js.</li>
-                    <li>Javascript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>MongoDB</li>
-                    <li>My SQL</li>
+                    <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="" /></li>
+                    <li><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" /></li>
+                    <li><img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" alt="" /></li>
+                    <li><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png" alt="" /></li>
+                    <li><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="" /></li>
+                    <li><img src="https://w7.pngwing.com/pngs/429/921/png-transparent-mongodb-plain-wordmark-logo-icon-thumbnail.png" alt="" /></li>
+                    <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png" alt="" /></li>
                 </ul>
             </div>
             <div className="soft">
