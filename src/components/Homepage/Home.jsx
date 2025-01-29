@@ -22,7 +22,7 @@ const Home = () => {
                 <p>Every pixel <span id="onespan"></span> tells a story; <span id="twospan"></span> every line of code <span id="threespan"></span> makes it real :)</p>
               </div>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <h3>Focus</h3>
             <div className="btn-container">
               <button>Less-Code</button>
@@ -32,7 +32,7 @@ const Home = () => {
               <button>Visualisation</button>
               <button>Colors</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
