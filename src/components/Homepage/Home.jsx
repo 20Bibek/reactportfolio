@@ -8,8 +8,9 @@ const Home = () => {
     <div className="home" id="home">
       <div className="lefthome">
         <div className="lefthome-card">
+          <p>Hii, I'm</p>
             <h1 className="animatedlogo">BIBEK DASH</h1>
-            <p>MERN STACK DEVELOPER</p>
+            <p>MERn Stack Developer</p>
         </div>
       </div>
       <div className="righthome">
