@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 1px solid lightseagreen;
+    border-bottom: 1px solid #4b1e2c;
   }
   
   .leftnav{
@@ -13,10 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #4b1e2c;
   }
   .midnav>ul>li>a{
     text-decoration: none;
-    color: #000;
+    color: #4b1e2c;
   }
   .midnav>ul>li>a:hover{
     color: rgb(112, 120, 207) ;
@@ -61,13 +62,13 @@
   
   .rightnav>a>button{
     padding: 5px 30px;
-    border: 0.3px solid rgb(111, 157, 237);
-    border-radius: 20px;
+    border: 0.3px solid #4b1e2c;
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
     color: #000000;
     font-size: 12px;
     font-weight: 600;
-    box-shadow: 0px 6px 1px rgb(112, 120, 207);
+    box-shadow: 0px 6px 1px #4b1e2c;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
@@ -88,7 +89,7 @@
   .hamburger .bar{
     width: 25px;
     height: 2.5px;
-    background-color: #708dd2;
+    background-color: #4b1e2c;
     border-radius: 5px;
   }
 
@@ -107,6 +108,7 @@
     .leftnav{
         width: 50%;
         height: 100%;
+        font-size: 0.8rem;
         /* background-color: aqua; */
     }
     .midnav>ul{
@@ -114,16 +116,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 250px;
-      width: 80%;
-      gap: 10px;
+      height: 260px;
+      width: 91%;
+      gap: 13px;
       /* border: 1px solid black; */
       border-radius: 20px;
       position: absolute;
       top: 70px;
-      left: 10%;
+      left: 4%;
       /* padding: 10px 20px; */
-      background-color: #fff;
+      background-color: #fdd9b5;
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
     }
   
@@ -151,14 +153,14 @@
       width: 50%;
       /* border-bottom: 2px solid #f0f0f0; */
       border-radius: 20px;
-      background-color: #b1c9d7;
+      background-color: #fff;
 
     }
     
   
     .midnav>ul>li:hover{
       color: #fff;
-      background-color: #7a8ab2;
+      /* background-color: #7a8ab2; */
     }
   
     .rightnav{

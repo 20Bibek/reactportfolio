@@ -1,406 +1,150 @@
-.about{
-    width: 100%;
-    height: 120vh;
-    /* background-color: lightblue; */
-    display: flex;
-    justify-content: center;
-    /* margin-bottom: 100px; */
+/* General Styles */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  /* background-color: #0d1117; */
+  color: #c9d1d9;
+
+}
+
+.leftabout, .rightabout {
+  flex: 1 1 45%;
+  margin: 20px;
+  background-color: #fdd9b5;
+  padding: 20px;
+  border-radius: 12px;
+  /* width: 300px; */
+  /* height: auto;
+   */
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
 }
 .leftabout{
-    width:35%;
-    height: 100%;
-    /* background-color: lightpink; */
-    display: flex;
-    justify-content: center;
-    padding: 100px 20px;
-    border-right: 2px solid rgb(115, 157, 173);
-
-}
-.leftbox{
-    width: 80%;
-    height: 250px;
-    border: 0.3px solid rgba(25, 11, 126, 0.877);
-    padding: 10px;
-    border-radius: 20px;
-    line-height: 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    box-shadow: 10px 10px 1px 1px rgb(115, 157, 173);
-    background-color: #b1c9d7;
-
+  width: 100px;
+  height: 300px;
 }
 
-.leftbox>h1{
-    font-size: 35px;
-    color: #3f41a2;
+.leftbox h1 {
+  font-size: 2.5rem;
+  color: #4b1e2c;
+  margin-bottom: 15px;
+  text-align: center;
 }
-.leftbox>p{
-    /* font-size: 18px; */
-    font-weight: 400;
-    line-height: 30px;
 
+.leftbox p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #4b1e2c;
 }
-.rightabout{
-    width: 70.2%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    padding: 20px;
-    /* justify-content: center; */
-    align-items: center;
-    gap: 80px;
-}
-.skills{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black;   */
-    gap: 45px;
-}
-.technical{
-    width: 31%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid gray;
-    border-radius:10%;
-    /* background-color: rgb(255, 209, 209); */
 
-
-}
-.soft{
-    width: 31%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid gray;
-
-    /* border: none; */
-
-    border-radius: 10%;
-}
-.technical>h2{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    color: rgb(115, 157, 173);
-
-}
-.soft>h2{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    color:rgb(115, 157, 173);
-}
- .skills ul{
-    list-style:none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    gap: 10px;
-}
-.internships{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 70%;
-    height: 70%;
-    padding:0px  15px;
-}
-.internships>h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.internships>h1>img{
-    width: 40px;
-    height: 40px;
-}
-.int1{
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border-right: 2px solid rgb(115, 157, 173);
-
-}
-.int2{
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border-right: 2px solid rgb(115, 157, 173);
-
-}
-.int3{
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border-right: 2px solid rgb(115, 157, 173);
-
-}
-.para{
-  font-weight: 600;
-  color: darkgray;
-}
-.skills li{
-    /* background: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    width: 20%;
-    flex: 1 1 calc(33.33% - 10px);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform: 0.3s ease;
-    padding: 8px 5px;
-    background-size: cover;
-    background-position: center;
-    color: rgba(25, 11, 126, 0.877);
-}
-.skills li>img{
-  width: 60px;
-  height: 60px;
-}
-.skills .technical li:hover{
-    /* box-shadow: 0px 8px 10px rgb(115, 157, 173); */
-    transform: translateY(-10px);
-}
-.skills>.soft{
-  height:350px;
-  width: 35%;
-}
-.skills>.soft li{
+/* Skills Section */
+.skills {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.technical, .soft {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.technical h2, .soft h2 {
+  font-size: 1.5rem;
+  color: #4b1e2c;
+  margin-bottom: 10px;
+}
+
+.technical ul, .soft ul {
+  list-style: none;
+  padding: 0;
+}
+
+.technical li, .soft li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1rem;
+  color: #4b1e2c;
+}
+
+.technical img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.technical img:hover {
+  transform: scale(1.2);
+}
+
+/* Internships & Education */
+.internships h1 {
+  display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 10px;
-  width: auto;
-  flex: 1 1 calc(33.33% - 10px);
-
-}
-.skills .soft li:hover{
-  box-shadow: 0px 8px 10px rgb(115, 157, 173);
-  transform: translateY(-2px);
+  font-size: 1.8rem;
+  color: #4b1e2c;
+  margin: 20px 0 10px;
 }
 
-.internships h2{
-    color: rgb(115, 157, 173);
-    padding: 10px 0;
-    font-size: 25px;
-}
-.internships>h1{
-    color: rgba(25, 11, 126, 0.877);
+.internships img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
+.int1, .int2, .int3 {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 
-@media (max-width: 480px) {
-    .about {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-    }
-  
-    .leftabout {
-      width: 100%;
-      height: auto;
-      border-right: none;
-      padding: 20px 10px;
-      
+.int1 h2, .int2 h2, .int3 h2 {
+  font-size: 1.4rem;
+  color: #4b1e2c;
+}
 
-    }
-  
-    .leftbox {
-      width: 80%;
-      height: auto;
-      padding: 20px;
-      /* box-shadow: none; */
-      /* border: none; */
-      
-    }
-  
-    .leftbox > h1 {
-      font-size: 28px;
-      
-    }
-  
-    .leftbox > p {
-      font-size: 16px;
-      line-height: 24px;
-      
-    }
-  
-    .rightabout {
-      width: 100%;
-      padding: 10px;
-      gap: 30px;
-    }
-  
-    .skills {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .technical,
-    .soft {
-      width: 100%;
-      height: auto;
-      border: none;
-      text-align: center;
-    }
-  
-    .technical > h2,
-    .soft > h2 {
-      font-size: 24px;
-    }
-  
-    .skills ul {
-        display: flex;
-      flex-wrap: wrap;
-      /* flex-direction: column; */
-      width: 60%;
-      gap: 10px;
-    }
-  
-    .skills li {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    .internships {
-      width: 100%;
-      gap: 15px;
-      padding: 0 10px;
-    }
-  
-    .internships > h1 {
-      font-size: 24px;
-    }
-  
-    .internships h2 {
-      font-size: 20px;
-    }
-  
-    .int1,
-    .int2,
-    .int3 {
-      padding: 5px;
-      border-right: none;
-      border-bottom: 1px solid rgb(115, 157, 173);
-    }
-  
-    .int1:last-child,
-    .int2:last-child,
-    .int3:last-child {
-      border-bottom: none;
-    }
+.para {
+  font-style: italic;
+  color: #474a4c;
+  margin: 5px 0;
+}
+
+.internships p {
+  color: #6c6f72;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #30363d;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leftabout, .rightabout {
+    flex: 1 1 100%;
+    margin: 10px 0;
   }
 
-  /* Tablet Styles (600px - 1024px) */
-@media (max-width: 1024px) and (min-width: 600px) {
-  .about {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+  .technical, .soft {
+    flex: 1 1 100%;
   }
 
-  .leftabout {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    padding: 40px 20px;
+  .leftbox h1 {
+    font-size: 2rem;
   }
 
-  .leftbox {
-    width: 80%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .leftbox > h1 {
-    font-size: 30px;
-  }
-
-  .leftbox > p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .rightabout {
-    width: 100%;
-    padding: 20px;
-    gap: 60px;
-  }
-
-  .skills {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .technical,
-  .soft {
-    width: 100%;
-    height: auto;
-    border: none;
-    text-align: center;
-  }
-
-  .technical > h2,
-  .soft > h2 {
-    font-size: 26px;
-    text-decoration: underline;
-  }
-
-  .skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 80%;
-  }
-
-  .skills li {
-    width: calc(33.33% - 10px); /* Ensures three items per row */
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .internships {
-    width: 100%;
-    gap: 20px;
-    padding: 0 20px;
-  }
-
-  .internships > h1 {
-    font-size: 26px;
-  }
-
-  .internships h2 {
-    font-size: 22px;
-  }
-
-  .int1, .int2, .int3 {
-    padding: 15px;
-    border-right: none;
-    border-bottom: 1px solid rgb(115, 157, 173);
-  }
-
-  .int1:last-child,
-  .int2:last-child,
-  .int3:last-child {
-    border-bottom: none;
+  .internships h1 {
+    font-size: 1.5rem;
   }
 }

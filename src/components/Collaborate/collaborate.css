@@ -1,152 +1,137 @@
-.collaborate{
+.collaborate {
     background: url("https://images.unsplash.com/photo-1622819584099-e04ccb14e8a7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     width: 100%;
-    height: 92.5vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    /* gap: 130px; */
-    /* align-items: center; */
-
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-.leftside{
-    width: 30%;
-    height:30% ;
-    /* background-color: aqua; */
+
+.leftside {
+    width: 40%;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px auto;
-    /* align-items: center; */
     gap: 20px;
     color: #fff;
     font-size: larger;
     border-bottom: 5px solid white;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.rightside{
-    width: 30%;
-    height: 60%;
+
+.leftside h1 {
+    font-size: 28px;
+}
+
+.leftside p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.rightside {
+    width: 40%;
+    min-width: 300px;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center; */
-    /* background-color: aqua; */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #fff;
     border-radius: 20px;
-    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
 }
-.rightside>form{
-    width: 80%;
-    height: auto;
+
+.rightside > form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    /* gap: 50px; */
+    gap: 15px;
     align-items: center;
 }
-.rightside>form>input{
+
+.rightside > form > input,
+.rightside > form > #idea {
     width: 100%;
-    height: 40px;
+    height: 45px;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 10px;
-}
-.rightside>form>#idea{
-    height: 80px;
-    padding: 0px 10px 30px 10px;
-}
-.rightside>form>button{
-    width: 30%;
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    background-color: lightgreen;
-    font-weight: 500;
+    background-color: rgba(237, 234, 234, 0.9);
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
+.rightside > form > #idea {
+    height: 100px;
+    resize: none;
+}
+
+.rightside > form > button {
+    width: 40%;
+    height: 40px;
+    background-color: #89abb9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightside > form > button:hover {
+    background-color: #7e75a6;
+}
+
+@media (max-width: 768px) {
     .collaborate {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        gap: 30px; /* Increase spacing for clarity */
-        text-align: center;
-        width: 100%;
-        height: 836px;
-        background-size: cover;
-        background-position: center;
     }
 
-    .leftside {
-        width: 100%; /* Full width for better readability */
-        padding: 10px;
-        font-size: 18px; /* Adjusted font size */
+    .leftside, .rightside {
+        width: 90%;
+        padding: 15px;
     }
 
     .leftside h1 {
-        font-size: 24px; /* Larger heading for emphasis */
+        font-size: 24px;
     }
 
     .leftside p {
-        font-size: 16px;
-        margin-top: 10px;
-        line-height: 1.5;
-    }
-
-    .rightside {
-        width: 100%;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.347);
-        border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: none;
-    }
-
-    .rightside > form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 15px; 
-        align-items: center;
-
-    }
-
-    .rightside > form > input, 
-    .rightside > form > #idea {
-        width: 100%;
-        height: 45px;
-        padding: 10px;
         font-size: 14px;
-        border: none;
-        border-radius: 10px;
-        outline: none;
-        background-color: rgba(237, 234, 234, 0.593);
-
-    }
-
-    .rightside > form > #idea {
-        height: 80px;
-        resize: none;
     }
 
     .rightside > form > button {
-        width: 40%;
-        height: 38px;
-        background-color: #89abb9; 
-        color: white;
-        font-size: 16px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color 0.3s ease; 
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftside, .rightside {
+        width: 100%;
     }
 
-    .rightside > form > button:hover {
-        background-color: #7e75a6;
+    .leftside h1 {
+        font-size: 20px;
+    }
+
+    .leftside p {
+        font-size: 12px;
+    }
+
+    .rightside > form > button {
+        width: 60%;
     }
 }
